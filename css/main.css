@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #ff8f00;
+  --para-color: #eaecf0;
+  --bg-color: #000000;
+  --h-font: "Ubuntu", sans-serif;
+  --p-font: "Roboto", sans-serif;
+  --hover: #ffffff;
+  --white: #fffff;
+  --black: #2222;
+}
+.container .navbar .container-fluid .logo img {
+  width: 40px;
+  object-fit: cover;
+}
+.navbar-nav {
+  display: flex;
+  justify-content: end;
+}
+.navbar-nav a {
+  color: var(--main-color);
+  font-family: var(--h-font);
+  border: 1px solid var(--main-color);
+  border-radius: 0.5rem;
+  margin: 0 0.5rem;
+  /* width: 100px; */
+  text-align: center;
+  transition: all 0.3s;
+  padding: 0.5rem 1rem;
+}
+.navbar-nav a:hover {
+  color: var(--hover);
+}
+.navbar-toggler {
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+}
+.navbar-toggler-icon {
+  color: var(--main-color);
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 992px) {
+  .navbar-nav a {
+    width: 100%;
+    margin: 0.2rem 0;
+    text-align: start;
+    padding: 1rem;
+  }
+}
+
+/* slide section  */
+.slide-container {
+  width: 100%;
+  min-height: 60vh;
+  position: relative;
+  overflow: hidden;
+}
+.slide-container .slide-card {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s;
+  position: absolute;
+}
+.slide-container .active-fade {
+  opacity: 1;
+}
+.slide-container .slide-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* control-slide  */
+.control-slide {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.control-slide button {
+  width: 50px;
+  height: 50px;
+  border-radius: 0.5rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.control-slide button i {
+  color: var(--main-color);
+  font-size: 2rem;
+}

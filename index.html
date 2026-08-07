@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>47 Website</title>
+    <!-- bootstrap css  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <!-- fontawesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" />
+    <!-- media css  -->
+    <link rel="stylesheet" href="css/media.css">
+    <!-- main css  -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- nav section  -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="#"><img src="./img/47grouplogo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto" id="navbar-nav">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-book"></i>
+                            About</a>
+                        <a class="nav-link" href="#"><i class="fa-regular fa-image"></i> Gallery</a>
+                        <a class="nav-link" href="#"><i class="fa-solid fa-house-chimney"></i> Branches</a>
+                        <a class="nav-link" href="#"><i class="fa-solid fa-utensils"></i> Service</a>
+                        <a class="nav-link" href="#"><i class="fa-solid fa-flag"></i> Core Value</a>
+                        <a class="nav-link" href="#"><i class="fa-solid fa-phone"></i> Contact</a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- slider section  -->
+    <div class="container">
+        <div class="slide-container">
+            <div class="slide-card active-fade">
+                <img src="./img/DT_1.jpg" alt="">
+            </div>
+            <div class="slide-card">
+                <img src="./img/DT_2.jpg" alt="">
+            </div>
+            <div class="slide-card">
+                <img src="./img/DT_3.jpg" alt="">
+            </div>
+            <div class="slide-card">
+                <img src="./img/DT_4.jpg" alt="">
+            </div>
+            <div class="control-slide">
+                <button onclick="prev()"><i class="fa-solid fa-circle-arrow-left"></i></button>
+                <button onclick="next()"><i class="fa-solid fa-circle-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>
