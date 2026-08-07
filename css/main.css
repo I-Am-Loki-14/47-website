@@ -17,6 +17,12 @@
   --white: #fffff;
   --black: #2222;
 }
+.title-head {
+  text-align: center;
+  font-family: var(--h-font);
+  color: var(--main-color);
+  margin: 1rem 0;
+}
 .container .navbar .container-fluid .logo img {
   width: 40px;
   object-fit: cover;
@@ -54,7 +60,7 @@
     width: 100%;
     margin: 0.2rem 0;
     text-align: start;
-    padding: 1rem;
+    padding: 0.7rem 1rem;
   }
 }
 
