@@ -13,3 +13,19 @@ function prev() {
 }
 setInterval(next,3500);
 
+const Dark = document.getElementById("dark")
+
+function dark() {
+    if (!Dark.classList.toggle('Dark')) {
+        document.body.classList.remove('light');
+        document.body.classList.add('dark');
+        Dark.innerHTML = '<img src="./img/sun.png" alt="">';
+        
+    } else {
+        document.body.classList.add('light');
+        document.body.classList.remove('dark')
+        Dark.innerHTML = '<img src="./img/moon.png" alt="">';
+        
+      
+    }
+}
