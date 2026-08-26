@@ -11,7 +11,7 @@ function prev() {
     sliders.forEach(slide => slide.classList.remove('active-fade'))
     sliders[index].classList.add('active-fade')
 }
-setInterval(next,3500);
+setInterval(next,4000);
 
 const Dark = document.getElementById("dark")
 

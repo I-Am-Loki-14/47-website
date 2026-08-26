@@ -9,12 +9,13 @@
 }
 :root {
   --main-color: #ff8f00;
+  --border-color: #ffa42cdf;
   --para-color: #a7a7a8;
   --bg-color: #000000;
   --h-font: "Ubuntu", sans-serif;
   --p-font: "Roboto", sans-serif;
   --hover: #ffffff;
-  --white: #fffff;
+  --white: #f3f0f0f4;
   --black: #2222;
 }
 body {
@@ -26,6 +27,7 @@ body {
 }
 .light {
   background-color: var(--white);
+  color: var(--black);
 }
 .darkbtn {
   border: 0px solid var(--main-color);
@@ -48,6 +50,9 @@ body {
   font-family: var(--h-font);
   color: var(--main-color);
   margin: 2.5rem 0;
+}
+.title-head h1 {
+  font-size: 1.7rem;
 }
 /* .navbar {
   position: fixed;
@@ -86,7 +91,7 @@ body {
   font-family: var(--h-font);
   border: 1px solid var(--main-color);
   border-radius: 0.5rem;
-  margin: 0 0.5rem;
+  margin: 0 0.3rem;
   /* width: 100px; */
   text-align: center;
   transition: all 0.3s;
@@ -132,7 +137,7 @@ body {
   top: 0;
   left: 0;
   opacity: 0;
-  transition: all 0.3s;
+  transition: all 0.4s;
   position: absolute;
 }
 .slide-container .active-fade {
@@ -156,12 +161,14 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 0.5rem;
-  border: none;
+  border: 1px solid var(--border-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
+  transition: all 0.3s;
+  background-color: var(--white);
 }
+
 .control-slide button i {
   color: var(--main-color);
   font-size: 2rem;
@@ -196,12 +203,12 @@ body {
   flex-direction: column;
 }
 .about-card .about-content p {
-  margin: 1.5rem 0;
+  margin: 1.3rem 0;
   color: var(--para-color);
   font-family: var(--p-font);
   font-size: 1rem;
   word-spacing: 0.1rem;
-  line-height: 1.7rem;
+  line-height: 1.8rem;
 }
 .about-card .about-content h2 {
   font-family: var(--h-font);
@@ -213,8 +220,43 @@ body {
   color: var(--para-color);
   display: flex;
   gap: 1.2rem;
+  font-size: 1.2rem;
 }
 .about-card .about-content span::first-letter {
   color: var(--main-color);
   font-size: 2.5rem;
+  font-weight: 500;
+}
+/* Our Branches  */
+.Our-Branch .card {
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+}
+.Our-Branch .card p {
+  color: var(--para-color);
+  display: none;
+}
+/* .Our-Branch .container .card:hover p {
+  display: block;
+  transition: all 0.3s;
+} */
+.Our-Branch .card .card-title {
+  color: var(--main-color);
+}
+/* service section  */
+.service .container .container-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+.service .container .card {
+  border: 1px solid var(--border-color);
+}
+
+.service .container .card h4 {
+  color: var(--main-color);
+  font-family: var(--h-font);
+}
+.service .container .card-body p {
+  color: var(--para-color);
 }
