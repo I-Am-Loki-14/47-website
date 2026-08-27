@@ -225,12 +225,12 @@ body {
   color: var(--para-color);
   display: flex;
   gap: 1.2rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .about-card .about-content span::first-letter {
   color: var(--main-color);
   font-size: 2.5rem;
-  font-weight: 500;
+  font-weight: bold;
 }
 /* Our Branches  */
 /* .Our-Branch .card {
