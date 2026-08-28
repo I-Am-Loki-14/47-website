@@ -325,8 +325,8 @@ body {
 }
 .bod .bod-card {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2.2rem;
   padding: 1rem 0;
 }
 .bod .bod-card img {
@@ -337,12 +337,20 @@ body {
   border-radius: 0.5rem;
   aspect-ratio: 4/3;
 }
+.bod .bod-card div {
+  position: relative;
+}
 .bod-card span {
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  top: 70%;
+  bottom: 1%;
   text-align: center;
   font-family: var(--h-font);
   color: var(--main-color);
   display: block;
-  padding: 1rem 0;
-  font-size: 1.1rem;
+  padding: 2rem 0;
+  font-size: 1rem;
   font-weight: 500;
 }
