@@ -29,3 +29,4 @@ function dark() {
       
     }
 }
+// Tiny Js 

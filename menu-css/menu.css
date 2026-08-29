@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+:root {
+  --main-color: #ff8f00;
+  --border-color: #ffa42cdf;
+  --para-color: #a7a7a8;
+  --bg-color: #000000e7;
+  --h-font: "Ubuntu", sans-serif;
+  --p-font: "Roboto", sans-serif;
+  --hover: #ffffff;
+  --white: #ffffff;
+  --black: #2222;
+}
+nav {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  right: 1%;
+}
+nav .menu-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 0.2rem;
+}
+nav .menu-links li {
+  border: 1px solid var(--border-color);
+  border-radius: 0.2rem;
+  text-align: center;
+  padding: 0.5rem;
+  transition: all 0.3s;
+}
+nav .menu-links li:hover {
+  background-color: var(--border-color);
+}
+nav .menu-links li a:hover {
+  color: var(--white);
+}
+nav .menu-links li a {
+  text-decoration: none;
+  font-family: var(--h-font);
+  color: var(--main-color);
+}
+
+/* Tiny  */
+.tns-nav {
+  display: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#mouse-drag img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.my-slider img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
