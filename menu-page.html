@@ -10,23 +10,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <!-- fontawesome link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" />
-    <!-- Tiny slider  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="stylesheet" href="menu-css/menu.css">
+
 </head>
 
 <body class="position-relative">
     <section class="container">
-        <div class="my-slider container my-slider-container" id="mouse-drag">
-            <div><img src="./img/DT_1.jpg" alt=""></div>
-            <div><img src="./img/DT_2.jpg" alt=""></div>
-            <div><img src="./img/DT_3.jpg" alt=""></div>
-            <div><img src="./img/DT_4.jpg" alt=""></div>
-            <div><img src="./img/DT_5.jpg" alt=""></div>
-            <div><img src="./img/DT_6.jpg" alt=""></div>
+        <div class="menu-container">
+            <div>
+                <img src="./img/DT_2.jpg" alt="">
+            </div>
         </div>
-
-
 
         <!-- nav  -->
         <nav>
@@ -42,24 +37,10 @@
             </ul>
         </nav>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- tiny js  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <script type="module">
 
 
-        var slider = tns({
-            "container": "#mouse-drag",
-            "items": 1,
-            "mouseDrag": true,
-            "slideBy": "page",
-            "swipeAngle": false,
-            "speed": 400,
-            "gutter": 15
-
-
-        });
-    </script>
 </body>
 
 </html>
