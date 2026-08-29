@@ -16,7 +16,7 @@
   --p-font: "Roboto", sans-serif;
   --hover: #ffffff;
   --white: #ffffff;
-  --black: #2222;
+  --black: #000000e7;
 }
 nav {
   width: 100%;
@@ -29,35 +29,74 @@ nav .menu-links {
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 0.2rem;
 }
-nav .menu-links li {
+nav .menu-links button {
   border: 1px solid var(--border-color);
   border-radius: 0.2rem;
   text-align: center;
-  padding: 0.5rem;
+  padding: 0.3rem 0.5rem;
   transition: all 0.3s;
-}
-nav .menu-links li:hover {
-  background-color: var(--border-color);
-}
-nav .menu-links li a:hover {
-  color: var(--white);
-}
-nav .menu-links li a {
-  text-decoration: none;
-  font-family: var(--h-font);
-  color: var(--main-color);
+  cursor: pointer;
+  color: var(--black);
+  font-weight: bold;
 }
 
 /* slider */
 .menu-container {
   width: 100%;
-  height: 80vh;
+  height: 85vh;
   border: 1px solid var(--border-color);
   overflow: hidden;
+  position: relative;
 }
-.menu-container img {
+.menu-container-card {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.4s;
+  position: absolute;
+}
+.menu-container-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center 50%;
+}
+@media (max-width: 500px) {
+  .menu-container {
+    width: 100%;
+    height: 80vh;
+  }
+}
+.container .active-first {
+  opacity: 1;
+}
+/* btn-container */
+.btn-container {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0%;
+}
+.btn-container button {
+  padding: 0.2rem 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.2rem;
+  font-family: var(--h-font);
+  /* background-color: transparent; */
+  color: var(--main-color);
+}
+#dt-card {
+  display: block;
+  transition: all 0.3s;
+}
+#thai47 {
+  background-color: var(--border-color);
+}
+#ch-card {
+  display: none;
+  transition: all 0.3s;
 }

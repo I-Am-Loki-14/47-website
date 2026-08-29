@@ -30,3 +30,27 @@ function dark() {
     }
 }
 // Tiny Js 
+const DTcard = document.getElementById('dt-card');
+const Th47 = document.getElementById('thai47')
+console.log(DTcard);
+
+const CHcard = document.getElementById('ch-card')
+const Ch47 = document.getElementById('chinese47')
+console.log(CHcard);
+
+
+function T47() {
+        DTcard.style.display = "block"
+       
+        CHcard.style.display = "none"
+        Th47.style.backgroundColor = "#ffa42cdf"
+        Th47.style.color = "#000000e7"
+         Ch47.style.backgroundColor = "transparent"
+    }
+    function CH47() {
+        Ch47.style.backgroundColor = "#ffa42cdf"
+        CHcard.style.display = "block";
+        DTcard.style.display = "none";
+         Th47.style.backgroundColor = "transparent"
+
+ }
