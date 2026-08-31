@@ -19,9 +19,11 @@
   --black: #000000e7;
 }
 nav {
+  margin-top: 1.5rem;
   width: 100%;
   position: sticky;
   bottom: 0;
+  padding-right: 1.5rem;
 }
 nav .menu-links {
   display: grid;
