@@ -18,7 +18,7 @@
 <body class="position-relative">
     <section class="container">
         <!-- DT card  -->
-        <div class="menu-container " id="dt-card">
+        <div class="menu-container-1 " id="dt-card">
             <div class="menu-container-card active-first">
                 <img src="./DT-folder/photo_1.jpg" alt="">
             </div>
@@ -131,13 +131,13 @@
 
 
             <div class="btn-container">
-                <button onclick="prevv()">Prev</button>
-                <button onclick="nextt()">Next</button>
+                <button onclick="prevthai()">Prev</button>
+                <button onclick="nextthai()">Next</button>
             </div>
         </div>
 
         <!-- Ch card  -->
-        <div class="menu-container " id="ch-card">
+        <div class="menu-container-2 " id="ch-card">
             <div class="menu-container-card active-first">
                 <img src="./CH-folder/1.jpg" alt="">
             </div>
@@ -270,11 +270,14 @@
             <div class="menu-container-card">
                 <img src="./CH-folder/45.jpg" alt="">
             </div>
+            <div class="menu-container-card">
+                <img src="./DT-folder//no-image.jpg" alt="">
+            </div>
 
             <!-- contoller  -->
             <div class="btn-container">
-                <button onclick="prevv()">Prev</button>
-                <button onclick="nextt()">Next</button>
+                <button onclick="prevchinese()">Prev</button>
+                <button onclick="nextchinese()">Next</button>
             </div>
         </div>
 
@@ -290,27 +293,7 @@
             </ul>
         </nav>
     </section>
-    <script>
-        const MenuSliders = document.querySelectorAll('.menu-container .menu-container-card')
-        let indexx = 0;
 
-        function nextt() {
-            indexx = (indexx + 1) % MenuSliders.length
-            MenuSliders.forEach(menuslide => menuslide.classList.remove('active-first'))
-            MenuSliders[indexx].classList.add('active-first')
-        }
-
-        function prevv() {
-            indexx = (indexx - 1 + MenuSliders.length) % MenuSliders.length
-            MenuSliders.forEach(menuslide => menuslide.classList.remove('active-first'))
-            MenuSliders[indexx].classList.add('active-first')
-        }
-        // setInterval(nextt, 4000)
-
-
-
-
-    </script>
     <script src="./js/javascript.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
