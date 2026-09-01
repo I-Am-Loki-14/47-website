@@ -19,18 +19,16 @@
   --black: #000000e7;
 }
 nav {
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
   width: 100%;
   position: sticky;
   bottom: 0;
-  padding: 0;
-  background-color: aqua;
 }
 nav .menu-links {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 0.2rem;
-  /* background-color: blue; */
+  gap: 0.3rem;
+  padding: 0.5rem;
 }
 nav .menu-links button {
   border: 1px solid var(--border-color);
@@ -41,6 +39,7 @@ nav .menu-links button {
   cursor: pointer;
   color: var(--black);
   font-weight: bold;
+  font-family: var(--h-font);
 }
 
 /* slider */
@@ -103,13 +102,18 @@ nav .menu-links button {
   bottom: 0%;
 }
 .btn-container button {
-  padding: 0.2rem 0.5rem;
+  padding: 0.3rem 0.5rem;
   border: 1px solid var(--border-color);
   border-radius: 0.2rem;
   font-family: var(--h-font);
   /* background-color: transparent; */
   font-weight: bold;
   color: var(--main-color);
+  transition: all 0.3s;
+}
+.btn-container button:hover {
+  background-color: var(--main-color);
+  color: var(--black);
 }
 #dt-card {
   display: block;
