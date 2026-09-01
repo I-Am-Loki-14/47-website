@@ -17,7 +17,7 @@
   --p-font: "Roboto", sans-serif;
   --hover: #ffffff;
   --white: #ffffff;
-  --black: #2222;
+  --black: #000000e7;
 }
 body {
   background-color: var(--bg-color);

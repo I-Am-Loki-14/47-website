@@ -1,3 +1,12 @@
+
+function closenav() {
+    const navbarCollapse = document.getElementById('navbarNavAltMarkup');
+
+    navbarCollapse.classList.remove('show');
+    console.log("Closed");
+}
+
+
 const sliders = document.querySelectorAll('.slide-container .slide-card')
 let index = 0 ;
 
@@ -15,6 +24,8 @@ setInterval(next,5000);
 
 const Dark = document.getElementById("dark")
 
+
+
 function dark() {
     if (!Dark.classList.toggle('Dark')) {
         document.body.classList.remove('light');
@@ -26,7 +37,6 @@ function dark() {
         document.body.classList.remove('dark')
         Dark.innerHTML = '<img src="./img/moon.png" alt="">';
         
-      
     }
 }
 
