@@ -35,7 +35,7 @@ body {
   border: 0px solid var(--main-color);
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  /* background-color: transparent; */
+  background-color: var(--border-color);
   color: var(--main-color);
   font-family: var(--h-font);
   width: 50px;

@@ -51,7 +51,8 @@ const Ch47 = document.getElementById('chinese47')
      const BUcard = document.getElementById('bu-card')
 const Bu47 = document.getElementById('burma47')
 
-
+    const OTcard = document.getElementById('ot-card')
+const Ot = document.getElementById('ot')
 
 
 
@@ -84,6 +85,7 @@ const Bu47 = document.getElementById('burma47')
             MenuSlidersTwo[ChineseIndex].classList.add('active-first')
         }
         // setInterval(nextt, 4000)
+
 // Burma47 Js
         const MenuSlidersThree = document.querySelectorAll('.menu-container-3 .menu-container-card')
         let BurmaIndex = 0
@@ -99,17 +101,33 @@ const Bu47 = document.getElementById('burma47')
             MenuSlidersThree[ BurmaIndex].classList.add('active-first')
         }
         // setInterval(nextt, 4000)
+// O&T Js
+        const MenuSlidersfour = document.querySelectorAll('.menu-container-4 .menu-container-card')
+        let OtIndex = 0
 
+        function nextot() {
+             OtIndex = ( OtIndex + 1) % MenuSlidersfour.length
+            MenuSlidersfour.forEach(slide => slide.classList.remove('active-first'));
+            MenuSlidersfour[ OtIndex].classList.add('active-first')
+        }
+        function prevot() {
+             OtIndex = ( OtIndex - 1 + MenuSlidersfour.length) % MenuSlidersfour.length
+            MenuSlidersfour.forEach(slide => slide.classList.remove('active-first'))
+            MenuSlidersfour[OtIndex].classList.add('active-first')
+        }
+        // setInterval(nextt, 4000)
 
         function T47() {
            
         DTcard.style.display = "block"
         BUcard.style.display = "none";
-        CHcard.style.display = "none"
+        CHcard.style.display = "none";
+         OTcard.style.display = "none";
         Th47.style.backgroundColor = "#ffa42cdf"
         Th47.style.color = "#000000e7"
         Ch47.style.backgroundColor = "transparent";
         Bu47.style.backgroundColor = "transparent"
+         Ot.style.backgroundColor = "transparent";
        
     }
     function CH47() {
@@ -120,14 +138,29 @@ const Bu47 = document.getElementById('burma47')
         BUcard.style.display = "none";
          Th47.style.backgroundColor = "transparent";
          Bu47.style.backgroundColor = "transparent"
+          Ot.style.backgroundColor = "transparent";
             }
 
-             function BU47() {
+     function BU47() {
  
         Bu47.style.backgroundColor = "#ffa42cdf"
         BUcard.style.display = "block";
         DTcard.style.display = "none";
         CHcard.style.display = "none";
+        OTcard.style.display = "none";
          Th47.style.backgroundColor = "transparent";
          Ch47.style.backgroundColor = "transparent";
+         Ot.style.backgroundColor = "transparent";
+            }
+
+            function OT() {
+ 
+        Ot.style.backgroundColor = "#ffa42cdf"
+        OTcard.style.display = "block";
+        BUcard.style.display = "none";
+        DTcard.style.display = "none";
+        CHcard.style.display = "none";
+       Th47.style.backgroundColor = "transparent";
+         Ch47.style.backgroundColor = "transparent";
+         Bu47.style.backgroundColor = "transparent"
             }
